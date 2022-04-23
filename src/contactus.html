@@ -18,12 +18,7 @@
 </head>
 
 <body>
-  <div id="wrapper">
-  <div class="jumbotron">
-    <h1 class="jumbotron-text">Sorry Men, It's Women Only Here!</h1>
-    <img src="images/Logo.png" alt="WomenFitness" width="350" height="300">
-    </div>
-</div>
+ 
 
 
 <div class="hamburger-menu">
@@ -31,6 +26,8 @@
   <label class="menu__btn" for="menu__toggle">
     <span></span>
   </label>
+
+  
 
   <ul class="menu__box">
     <li><a class="menu__item" href="index.html">Home</a></li>
@@ -44,35 +41,42 @@
   </ul>
 </div>
 
+<br>
+<center><h1>Contact Us</h1></center>
+<form class="contactinfo">
 
-<div class="wrapping">
-<div class="heading">
-𝚁𝚎𝚟𝚒𝚎𝚠𝚜 𝙱𝚢 𝙾𝚞𝚛 𝙲𝚞𝚜𝚝𝚘𝚖𝚎𝚛𝚜
-</div>
-<center>
-<div class="reviews"style="float: left;">
-<img src="images/review3.PNG" alt="WomenFitness">
+  <div class="form-group">
+    <label for="contact-name">Name</label>
+    <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+    <span class='error-message' id='name-error'></span>
 </div>
 
-  <div class="heading2">
-<div class="magazine">
-  <img src="images/womensfitnessmagazine.PNG" alt="WomenFitness">
-</div>  
+<div class="form-group">
+    <label for="contact-phone">Phone Number</label>
+    <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+    <span class='error-message' id='phone-error'></span>
 </div>
-<div class wrap>
-  <h1 class="h1">𝚆𝚑𝚘 𝚆𝚎 𝙰𝚛𝚎</h1>
-  <p class="text">Here at Strong Women Fitness we strive for competition. 
-  Founded in 1994, We push our Women into becoming healthy and give you the results YOU WANT. 
-  When I first started this business, I always wanted to give women  results of what they deserve without men 
-  competing over women. We know your time in the gym is critical to maintaining your physical and mental well-being, 
-  so we provide welcoming  and inclusive environments, with thousands of square feet of premium strength and cardio equipment, 
-  turf zones, free weights, functional training areas and more. Studio and cycle classes, personal training, and innovative digital 
-  and virtual  offerings are all available options to  help you keep your mind and body fit, so you can reset your next 24 hours and 
-  be prepared for what’s next. </p>
 
+<div class="form-group">
+    <label for="contact-email">Email address</label>
+    <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+    <span class='error-message' id='email-error'></span>
+</div>   
+
+<div class="form-group">
+    <label for='contactMessage'>Your Message</label>
+    <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+    <span class='error-message' id='message-error'></span>
 </div>
-</div>
-</center>
+
+<button onclick='validateForm()' class="btn btn-default">Submit</button>
+<span class='error-message' id='submit-error'></span>
+</form>
+<br><br>
+<br><br>
+<br><br>
+<br>
+
 
 <footer class="footer-distributed">
 
@@ -82,17 +86,18 @@
     <p class="footer-links">
       <a class="link-1" href="index.html">Home</a>
 
-      <a href="trainers.html">Personal Trainers</a>
+      <a href="/trainers.html">Personal Trainers</a>
 
-      <a href="payments.html">Payments & Plans</a>
+      <a href="/payments.html">Payments & Plans</a>
 
-      <a href="amenities.html">Our Amenities</a>
+      <a href="/amenities.html">Our Amenities</a>
 
-      <a href="chilcare.html">Chilcare</a>
+      <a href="/chilcare.html">Chilcare</a>
 
-      <a href="schedule.html">Schedule Information</a>
+      <a href="/schedule.html">Schedule Information</a>
 
       <a href="/contactus.html">Contact Us</a>
+      
     </p>
     <p>Strong Women Fitness</p>
     <p>123 Main St Draper, UT 84020</p>
@@ -103,7 +108,6 @@
   </div>
 
 </footer>
-
 
 
 
